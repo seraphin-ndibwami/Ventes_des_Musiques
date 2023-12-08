@@ -1,0 +1,10 @@
+DOCUMMENTATION DES API
+----------------------
+
+1. http://127.0.0.1/nduleapp/api/auth/login
+	
+	REQUETE ATTENDU : POST, avec deux formulaires, dont name="email" et name="password"
+
+	En cas d'erreur la sortie json est : [
+						"erreur" => "Utilisateur ou mot de passe incorrect"
+					     ]

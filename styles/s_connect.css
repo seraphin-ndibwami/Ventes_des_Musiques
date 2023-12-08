@@ -1,0 +1,44 @@
+.google_apple {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 36px;
+    border: solid 1px hsl(0, 0%, 40%);
+    margin-bottom: 25px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.or_class {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.eye_icon {
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 210px;
+}
+
+.input_checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 240px;
+    height: 36px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding-left : 2px;
+    background-color: #080808;
+}
+
+.input_checkbox > input {
+    margin-right: 20px;
+    height: 12px;
+    background-color:#B5179E;
+}

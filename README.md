@@ -1,6 +1,6 @@
-# Bienvenue sur (nom de la plateforme)
+# Bienvenue sur ndule
 
-(nom de la plateforme) est une plateforme de vente et de streaming de musique offrant une large sélection de titres et d'albums de divers genres musicaux. Notre plateforme offre une expérience exceptionnelle pour les amateurs de musique du monde entier.
+ndule est une plateforme de vente et de streaming de musique offrant une large sélection de titres et d'albums de divers genres musicaux. Notre plateforme offre une expérience exceptionnelle pour les amateurs de musique du monde entier.
 
 ## Catalogue
 
@@ -31,6 +31,6 @@ Créez vos playlists personnalisées, suivez vos artistes préférés et découv
 ### Options Flexibles
 Choisissez parmi une variété d'abonnements adaptés à vos besoins, allant des plans mensuels aux plan annuels
 
-## Découvrez (nom de la plateforme)
+## Découvrez ndule
 
-Rejoignez-nous dès aujourd'hui et plongez dans un monde de musique sans limites sur [nom de la plateforme]().
+Rejoignez-nous dès aujourd'hui et plongez dans un monde de musique sans limites sur [ndule]().

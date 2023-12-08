@@ -1,0 +1,106 @@
+body{
+
+    background-color:#080808;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    max-height: max-content;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+
+}
+h1{
+    text-align: center;
+    margin-top: 0.1%;
+}
+h2{
+
+}
+.compte{
+    display: flex;
+
+
+}
+.utilisateur:hover{
+
+    border: solid 1px #7209B7;
+    
+    
+}
+.utilisateur{
+    margin-left: 40%;
+    padding: 0.5%;
+}
+.musiciens{
+
+    margin-right: 40%;
+    padding: 0.5%;
+    border: 1px;
+}
+
+.musiciens:hover{
+    border: solid 1px #7209B7;
+}
+
+.profile{
+    text-align: center;
+    border: 1px dashed  #A7A7A7;
+    block-size: 80px;
+    padding: 6%;
+    border-radius: 7px;
+    /* height: 20px; */
+}
+
+.profil{
+    border: 1px solid  #A7A7A7;
+    block-size: 90px;
+    width:35%;
+    padding: 0.5%;
+    border-radius: 7px;
+    height: 40%;
+
+}
+
+
+.form{
+    margin-left: 40%;
+}
+
+.numero{
+    background-color: #080808;
+    width: 35%;
+    height: 30px;
+    border-radius: 5px;
+    color: #FFFFFF;
+
+
+}
+.numLable{
+    margin-left: 80%;
+}
+.next{
+    text-align: center;
+    border: solid 1px #B5179E ;
+    width: 20%;
+    margin-left:40%;
+    padding: 0.5%;
+    color: #FFFFFF;
+    background-color: #B5179E;
+    border-radius: 100px;
+    text-decoration: none;
+    
+}
+.etape{
+    margin-left: 25%;
+}
+
+.next{
+    margin-left: 40%;
+}
+.p{
+    color:#A7A7A7;
+    margin-left: 34%;
+}
+.photo{
+    background-color: #080808;
+}

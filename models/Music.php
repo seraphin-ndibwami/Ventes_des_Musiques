@@ -47,6 +47,29 @@
         }
 
 
+        static function addMusicToAlbum($id_music_, $id_album_){
+            global $db;
+
+            $requete = "UPDATE music set id_album = ? where id_music = ?";
+            $statement = $db->prepare($requete);
+            $execute=$statement->execute(array($id_album_, $id_music_));
+
+            return $resultat = $execute ? true : false;
+
+        }
+
+        static function deleteMusicToAlbum($id_music_, $id_album_){
+            global $db;
+
+            $requete = "UPDATE music set id_album = ? where id_music = ?";
+            $statement = $db->prepare($requete);
+            $execute=$statement->execute(array(null, $id_music_));
+
+            return $resultat = $execute ? true : false;
+
+        }
+
+
 
         
 

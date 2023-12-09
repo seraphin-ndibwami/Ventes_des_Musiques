@@ -34,6 +34,42 @@
 
 
 
+        static function getAlbumById($id) {
+            global $db;
+            $requete = 'SELECT * FROM album WHERE id = ? ';
+            $statement = $db->prepare($requete);
+            $execute = $statement->execute(array($id));
+            
+            if ($execute) {
+                if($data = $statement -> fetch()){
+                    $album = new Album($data['album_name'], $data['album_date'], $data['album_image']);
+                    return $album;
+                } else return null;
+            } else return null;
+    }
+
+
+
+        static function getAlbums() {
+            global $db;
+            $requete = ' SELECT * FROM album ';
+            $statement = $db->prepare($requete);
+            $execute = $statement->execute();
+
+            $albums=[];
+
+            if ($execute) {
+                    while ($data = $statement -> fetch()) {
+                    $album = new Album($data['album_name'], $data['album_date'], $data['album_image']);
+                    array_push($albums,$album);
+                    }
+                    return $albums;
+            } else return [];
+
+    }
+
+
+
         /**
          * Set the value of id_album
          *

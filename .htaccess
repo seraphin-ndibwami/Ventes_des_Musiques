@@ -1,2 +1,29 @@
 RewriteEngine On #Activer le module Rewrite
+
 RewriteRule ^user/login/?$ api/user/login.php [NC,L]
+
+#Add music to album
+RewriteRule ^music/(\d+)/addToAlbum/(\d+)$ api/music/addToAlbum.php?id_music=$1&id_album=$2 [QSA,L]
+
+#delete music to album
+RewriteRule ^music/(\d+)/deleteToAlbum/(\d+)$ api/music/deleteToAlbum.php?id_music=$1&id_album=$2 [QSA,L]
+
+#fetch all album
+RewriteRule ^album/?$ api/album/fecthAll.php [NC,L]
+
+#fetch one album
+RewriteRule ^album/(\d+)$ api/album/getOne.php?id_album=$1 [QSA,L]
+
+
+
+#Add music to playlist
+RewriteRule ^playlist/(\d+)/addToPlaylist/(\d+)$ api/playlist/addToPlaylist.php?id_music=$1&id_playlist=$2 [QSA,L]
+
+#delete music to playlist
+RewriteRule ^playlist/(\d+)/deleteToPlaylist/(\d+)$ api/playlist/deleteToPlaylist.php?id_music=$1&id_playlist=$2 [QSA,L]
+
+#fetch all album
+RewriteRule ^playlist/?$ api/playlist/fecthAll.php [NC,L]
+
+#fetch one album
+RewriteRule ^playlist/(\d+)$ api/playlist/getOne.php?id_playlist=$1 [QSA,L]

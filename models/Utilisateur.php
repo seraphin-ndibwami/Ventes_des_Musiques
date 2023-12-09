@@ -231,7 +231,7 @@
          */ 
         public function getPassWord()
         {
-                return $this->passWord;
+                return $this->password;
         }
 
         /**

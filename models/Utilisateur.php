@@ -229,7 +229,7 @@
         /**
          * Get the value of passWord
          */ 
-        public function getPassWord()
+        public function getPassword()
         {
                 return $this->password;
         }
@@ -239,22 +239,11 @@
          *
          * @return  self
          */ 
-        public function setPassWord($passWord)
+        public function setPassword($password)
         {
-                $this->passWord = $passWord;
+                $this->password = $password;
 
                 return $this;
         }
 
-        /**
-         * Set the value of id
-         *
-         * @return  self
-         */ 
-        public function setId($id)
-        {
-                $this->id = $id;
-
-                return $this;
-        }
     }

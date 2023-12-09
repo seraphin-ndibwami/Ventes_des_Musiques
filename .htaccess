@@ -1,2 +1,2 @@
 RewriteEngine On #Activer le module Rewrite
-RewriteRule ^api/auth/login/?$ api/auth/login.php [NC,L]
+RewriteRule ^user/login/?$ api/user/login.php [NC,L]

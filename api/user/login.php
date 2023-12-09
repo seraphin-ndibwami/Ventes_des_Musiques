@@ -9,7 +9,7 @@
     //Method autorisee
     header("Access-Control-Allow-Methods: POST");
     //Duree de vie de la requete
-    header("Sccess-Control-Max-Age: 3600");
+    header("Access-Control-Max-Age: 3600");
     //Entete autorisees
     header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Autorization, X-Requested-Width");
 
@@ -26,7 +26,7 @@
         // print_r($password);
 
         //On recupere les donnees des utilisateurs
-        $response = Authentification::login($email, $password);
+        $response = Utilisateur::login($email, $password);
         print_r($response);
 
         if($response == "donotmuch") {

@@ -1,0 +1,15 @@
+{
+    "name": "hp/nduleapp",
+    "autoload": {
+        "psr-4": {
+            "Hp\\Nduleapp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Walter28",
+            "email": "walterchristian28@gmail.com"
+        }
+    ],
+    "require": {}
+}

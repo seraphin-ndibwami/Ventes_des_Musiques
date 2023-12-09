@@ -1,0 +1,134 @@
+@startuml nduleDiag
+
+class client {
+    {Static} String nom
+    
+    String abonnement
+    
+    void creerCompte()
+    void authentifier()
+    void subscribe()
+   
+}
+
+abstract Utilisateur {
+    String nom 
+    String prenom
+    String postnom
+    String email
+    String imageTitle
+    String phone
+    String pays 
+    String passWord
+    abstract creerUncompte()
+    abstract subscribe()
+    abstract recoverPassword()
+   
+}
+class musicien {
+    String musicGender
+    String pseudo
+    String facebook
+    String twitter
+    String instagram
+    int subscribes
+
+    boolean official
+
+    void filter()
+    void notification()
+    void bloquer ()
+    void voirSignalement ()
+}
+
+class musique {
+   {Static} String titre 
+    String gender
+    String format
+    String type 
+    String backgroundImage
+    Int timing 
+    Int Size 
+    Int note 
+    Int downloads
+
+    void upload()
+    void streamMusic()
+    void liker()
+    void deleteMusic()
+    void searchMusic()
+    void filterMusic()
+    void createMusic()
+    void readMusic()
+
+    
+}
+
+class downloads {
+    
+}
+
+class Abonnement {
+    {Static} Float price 
+    Int  period
+    String type
+
+
+    void modify()
+}
+Utilisateur <-- musicien
+Utilisateur<-- client
+
+class notification {
+    int Id 
+    String musician
+    String music
+    
+    void afficher()
+    void archiver()
+
+}
+
+class playList {
+    String nom 
+    void createPlaylist()
+    void updatePlaylist()
+    void deletePlaylist()
+    void readUpdate()
+}
+
+class admin {
+    String userName 
+    String passWord
+
+}
+
+class Album {
+    String nom 
+    String dateSortie 
+    String price 
+
+    void createAlbum()
+    void deleteAlbum()
+    void readAlbum()
+    void renameAlbum()
+    void publishAlbum()
+    void archiveAlbum()
+
+}
+
+class favoris {
+
+}
+
+class signalemnt 
+musicien "1" --- "1..*" musique : Avoir
+musique "1..*" ---"1..*" playList :Appartenir
+musique "1..*" ---"1..*" Album :Appartenir
+Utilisateur "1" ---"1" Abonnement : Avoir
+Utilisateur "1" ---"1" playList : Avoir
+Utilisateur "1" ---"1..*" notification : Recevoir
+Utilisateur "1" ---"1..*" musique : Ecouter
+Utilisateur "1" ---"1..*" musique : Streamer
+Utilisateur "1" ---"1..*" musique : download
+@enduml

@@ -1,7 +1,7 @@
 DOCUMMENTATION DES API
 ----------------------
 
-1. http://127.0.0.1/nduleapp/api/auth/login
+1. POST http://127.0.0.1/user/login
 	
 	REQUETE ATTENDU : POST, avec deux formulaires, dont name="email" et name="password"
 

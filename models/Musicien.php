@@ -11,6 +11,7 @@
         private $musician_instagram;
         private $musician_twitter;
         private $musician_official;
+        private $musician_gender;
         private $musician_gender_music;
 
 
@@ -24,7 +25,7 @@
         private $musician_pays;
         private $musician_password;
 
-        public function __construct($musician_pseudo, $musician_facebook, $musician_instagram, $musician_twitter, $musician_official, $musician_gender_music) {
+        public function __construct($musician_pseudo, $musician_facebook, $musician_instagram, $musician_twitter, $musician_official, $musician_gender_music, $musician_gender) {
             parent::__construct($this->nom, $this->prenom, $this->postnom, $this->email, $this->imageTitle, $this->phone, $this->pays, $this->password);
 
             $this->musician_pseudo = $musician_pseudo;
@@ -33,6 +34,7 @@
             $this->musician_twitter = $musician_twitter;
             $this->musician_official = $musician_official;
             $this->musician_gender_music = $musician_gender_music;
+            $this->musician_gender = $musician_gender;
 
             $this->musician_nom = $this->nom;
             $this->musician_prenom = $this->prenom;
@@ -196,6 +198,26 @@
         $this->musician_password = $musician_password;
     }
 
+
+        /**
+         * Get the value of musician_gender
+         */ 
+        public function getMusician_gender()
+        {
+                return $this->musician_gender;
+        }
+
+        /**
+         * Set the value of musician_gender
+         *
+         * @return  self
+         */ 
+        public function setMusician_gender($musician_gender)
+        {
+                $this->musician_gender = $musician_gender;
+
+                return $this;
+        }
 }
 
     

@@ -18,12 +18,12 @@
 
         //On inclu les fichiers de configuration et d'acces aux donnees
         include_once '../../configurations/config.php';
-        include_once '../../models/Playlist.php';
+        include_once '../../models/Playlist_music.php';
 
         $id_music_get = htmlspecialchars(strip_tags($_GET['id_music']));
         $id_playlist_get = htmlspecialchars(strip_tags($_GET['id_playlist']));
 
-        $response = Playlist::deleteMusicToPlaylist($id_album_get);
+        $response = Playlist_music::addMusicToPlaylist($id_music_get, $id_album_get);
 
         if($response){
             $render_array = [

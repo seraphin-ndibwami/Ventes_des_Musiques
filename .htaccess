@@ -17,13 +17,13 @@ RewriteRule ^album/(\d+)$ api/album/getOne.php?id_album=$1 [QSA,L]
 
 
 #Add music to playlist
-RewriteRule ^playlist/(\d+)/addToPlaylist/(\d+)$ api/playlist/addToPlaylist.php?id_music=$1&id_playlist=$2 [QSA,L]
+RewriteRule ^music/(\d+)/addToPlaylist/(\d+)$ api/playlist_music/addToPlaylist.php?id_music=$1&id_playlist=$2 [QSA,L]
 
 #delete music to playlist
-RewriteRule ^playlist/(\d+)/deleteToPlaylist/(\d+)$ api/playlist/deleteToPlaylist.php?id_music=$1&id_playlist=$2 [QSA,L]
+RewriteRule ^music/(\d+)/deleteToPlaylist/(\d+)$ api/playlist_music/deleteToPlaylist.php?id_music=$1&id_playlist=$2 [QSA,L]
 
-#fetch all album
+#fetch all playlist
 RewriteRule ^playlist/?$ api/playlist/fecthAll.php [NC,L]
 
-#fetch one album
+#fetch one playlist
 RewriteRule ^playlist/(\d+)$ api/playlist/getOne.php?id_playlist=$1 [QSA,L]

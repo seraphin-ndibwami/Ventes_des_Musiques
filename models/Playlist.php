@@ -28,30 +28,6 @@
             } else return null;
         }
 
-
-        static function addMusicToPlaylist($id_music_, $id_playlist_){
-            global $db;
-
-            $requete = "UPDATE playlist set id_playlist = ? where id_music = ?";
-            $statement = $db->prepare($requete);
-            $execute=$statement->execute(array($id_playlist_, $id_music_));
-
-            return $resultat = $execute ? true : false;
-
-        }
-
-        static function deleteMusicToPlaylist($id_playlist_){
-            global $db;
-
-            // $requete = "UPDATE music set id_album = ? where id_music = ?";
-            $requete = "DELETE FROM `playlist` WHERE ?";
-            $statement = $db->prepare($requete);
-            $execute=$statement->execute($id_playlist_);
-
-            return $resultat = $execute ? true : false;
-
-        }
-
         static function getPlaylists(){
             global $db;
             $requete = ' SELECT * FROM playlist ';

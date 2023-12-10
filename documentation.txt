@@ -1,10 +1,69 @@
 DOCUMMENTATION DES API
 ----------------------
 
-1. POST http://127.0.0.1/user/login
+1.	POST	/user/login
 	
-	REQUETE ATTENDU : POST, avec deux formulaires, dont name="email" et name="password"
+	REQUETE ATTENDU : POST, avec deux input, dont type name="email" et name="password"
 
-	En cas d'erreur la sortie json est : [
-						"erreur" => "Utilisateur ou mot de passe incorrect"
-					     ]
+	En cas d'erreur la sortie json est : {
+						"erreur" : "Utilisateur ou mot de passe incorrect"
+					     }
+
+
+2.	GET	/music/{id}/addToAlbum/{id}
+
+	Role : Ajouter une chanson dans un album
+
+	le premier id :pour la musique , le second pour l'album
+
+	En cas d'erreur la sortie json est : {
+		"message" : "error"
+	}
+
+3.	GET	/music/{id}/deleteToAlbum/{id}
+
+	Role : supprimmer un chanson dans un album
+
+4.	GET	/album
+
+	Role : permet de fetch all albums depuis la db
+
+	En cas d'erreur on a un tableau vide []
+
+5.	GET	/album/{id}
+
+	Role : permet de get un album by id
+
+	En cas d'erreur ca renvoie null
+
+4.	GET	/music/{id}/addToPlaylist/{id}
+
+	Role : permet d'ajouter une chanson dans une playlist
+
+	En cas d'erreur la sortie json est : {
+		"message" : "error"
+	}
+
+5.	GET	/music/{id}/deleteToPlaylist/{id}
+
+	Role : permet de supprimmer une chanson dans une playlist
+
+	En cas d'erreur la sortie json est : {
+		"message" : "error"
+	}
+
+6.	GET	/playlist
+
+	Role : permet de fetch all playlist
+
+	En cas d'erreur la sortie json est : {
+		tableau vide
+	}
+
+7.	GET	/playlist/{id}
+
+	Role : permet de fetch une playlist
+
+	En cas d'erreur la sortie json est : {
+		null
+	}
